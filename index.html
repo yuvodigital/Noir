@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR Studio — Barber Shop</title>
+
+    <meta
+        name="description"
+        content="NOIR Studio — Modern barbering, classic cuts and premium grooming."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ANNOUNCEMENT
+    ========================== -->
+
+    <div class="announcement">
+        <span>NEW</span>
+        Online booking is now available
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            NOIR<span>.</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#booking-form" class="nav-cta booking-link" data-service="Classic Cut">
+                Book now
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    BARBER SHOP · EST. 2018
+                </p>
+
+                <h1>
+                    Sharp cuts.<br>
+                    <em>Clean style.</em>
+                </h1>
+
+                <p class="hero-copy">
+                    Modern barbering with a classic attitude.
+                    Precision cuts, premium grooming and a
+                    style made for you.
+                </p>
+
+                <div class="hero-actions"></div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats">
+
+            <div>
+                <strong>8+</strong>
+                <span>Years of experience</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>Google rating</span>
+            </div>
+
+            <div>
+                <strong>5K+</strong>
+                <span>Haircuts</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Passion</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+
+        <section class="section services-section" id="services">
+
+            <div class="section-head">
+
+                <div>
+                    <p class="eyebrow dark">
+                        OUR SERVICES
+                    </p>
+
+                    <h2>
+                        Simple.<br>
+                        <em>Precise.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    From classic cuts to modern fades.
+                    Choose your treatment and book your
+                    appointment instantly.
+                </p>
+
+            </div>
+
+
+            <div class="services-list">
+
+                <article class="service">
+
+                    <span class="service-no">01</span>
+
+                    <div class="service-info">
+                        <h3>Classic Cut</h3>
+                        <p>Classic men’s haircut with styling and finish.</p>
+                    </div>
+
+                    <strong class="service-price">350 kr</strong>
+
+                    <a href="#booking-form" class="service-book booking-link" data-service="Classic Cut">
+                        Book now
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+                <article class="service">
+
+                    <span class="service-no">02</span>
+
+                    <div class="service-info">
+                        <h3>Skin Fade</h3>
+                        <p>Clean fade with a sharp finish and styling.</p>
+                    </div>
+
+                    <strong class="service-price">400 kr</strong>
+
+                    <a href="#booking-form" class="service-book booking-link" data-service="Skin Fade">
+                        Book now
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+                <article class="service">
+
+                    <span class="service-no">03</span>
+
+                    <div class="service-info">
+                        <h3>Beard Trim</h3>
+                        <p>Shaping, trimming and a professional finish.</p>
+                    </div>
+
+                    <strong class="service-price">250 kr</strong>
+
+                    <a href="#booking-form" class="service-book booking-link" data-service="Beard Trim">
+                        Book now
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+                <article class="service">
+
+                    <span class="service-no">04</span>
+
+                    <div class="service-info">
+                        <h3>Hair &amp; Beard</h3>
+                        <p>Complete treatment with hair and beard.</p>
+                    </div>
+
+                    <strong class="service-price">550 kr</strong>
+
+                    <a href="#booking-form" class="service-book booking-link" data-service="Hair & Beard">
+                        Book now
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+                <article class="service">
+
+                    <span class="service-no">05</span>
+
+                    <div class="service-info">
+                        <h3>Kids Cut</h3>
+                        <p>Haircut for children up to 12 years old.</p>
+                    </div>
+
+                    <strong class="service-price">300 kr</strong>
+
+                    <a href="#booking-form" class="service-book booking-link" data-service="Kids Cut">
+                        Book now
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+            <p class="small-note">
+                * Prices may vary depending on the treatment.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             PRICING
+        ========================== -->
+
+        <section class="section pricing-section">
+
+            <div class="section-head compact">
+
+                <div>
+                    <p class="eyebrow dark">
+                        PRICING
+                    </p>
+
+                    <h2>
+                        Straightforward.<br>
+                        <em>Premium.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Clear pricing for a clean, stress-free experience.
+                </p>
+
+            </div>
+
+            <div class="pricing-grid">
+
+                <article class="price-card">
+                    <span class="price-tag">Essential</span>
+                    <h3>Classic Cut</h3>
+                    <strong>350 kr</strong>
+                    <p>Precision cut, wash and styling finish.</p>
+                </article>
+
+                <article class="price-card featured">
+                    <span class="price-tag">Most popular</span>
+                    <h3>Skin Fade</h3>
+                    <strong>400 kr</strong>
+                    <p>Sharp fade with a tailored, clean finish.</p>
+                </article>
+
+                <article class="price-card">
+                    <span class="price-tag">Signature</span>
+                    <h3>Hair & Beard</h3>
+                    <strong>550 kr</strong>
+                    <p>Complete grooming treatment with full finish.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about" id="about">
+
+            <div class="about-image" aria-label="Barber shop interior"></div>
+
+            <div class="about-copy">
+
+                <p class="eyebrow dark">
+                    ABOUT NOIR
+                </p>
+
+                <div class="brand-mark" aria-label="NOIR brand mark">NOIR</div>
+
+                <h2>
+                    More than<br>
+                    <em>a haircut.</em>
+                </h2>
+
+                <p>
+                    NOIR started as a small studio built around one idea: good grooming should feel personal, calm, and premium. What began as a neighborhood barber room grew into a place where craft, conversation, and confidence meet.
+                </p>
+
+                <p>
+                    We keep things classic, sharp, and tailored to the individual—because the best style is the one that feels like you.
+                </p>
+
+                <a href="#contact" class="arrow-link">
+                    Visit us
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section class="section gallery" id="gallery">
+
+            <div class="section-head compact">
+
+                <div>
+
+                    <p class="eyebrow dark">
+                        BEFORE & AFTER
+                    </p>
+
+                    <h2>
+                        The <em>details.</em>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Precision, detail and personal style in every cut.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item g1"></div>
+
+                <div class="gallery-item g2"></div>
+
+                <div class="gallery-item g3"></div>
+
+                <div class="gallery-item g4"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REVIEW
+        ========================== -->
+
+        <section class="quote-section">
+
+            <p class="eyebrow quote-label">
+                CLIENT FEEDBACK
+            </p>
+
+            <div class="quote-mark">
+                “
+            </div>
+
+            <blockquote>
+                "One of the best barber experiences
+                I've ever had. The attention to detail
+                is on another level."
+            </blockquote>
+
+            <p>
+                — Marcus · Regular client
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT / HOURS
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="contact">
+
+                <div>
+
+                    <p class="eyebrow dark">
+                        VISIT US
+                    </p>
+
+                    <h2>
+                        Come<br>
+                        <em>through.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-details">
+
+                    <div class="detail-item">
+                        <span class="detail-icon">📍</span>
+                        <div>
+                            <span class="detail-label">ADDRESS</span>
+                            <p>
+                                Main Street 24<br>
+                                261 31 Landskrona
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-icon">📞</span>
+                        <div>
+                            <span class="detail-label">PHONE</span>
+                            <p>
+                                <a href="tel:+46701234567">
+                                    070-123 45 67
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-icon">✉️</span>
+                        <div>
+                            <span class="detail-label">EMAIL</span>
+                            <p>
+                                <a href="mailto:hello@noirstudio.se">
+                                    hello@noirstudio.se
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-icon">◎</span>
+                        <div>
+                            <span class="detail-label">SOCIAL</span>
+                            <p>
+                                <a href="#">
+                                    Instagram
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- HOURS -->
+
+                <div class="hours">
+
+                    <div>
+                        <span>
+                            Monday
+                        </span>
+
+                        <strong>
+                            10:00 — 18:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Tuesday
+                        </span>
+
+                        <strong>
+                            10:00 — 18:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Wednesday
+                        </span>
+
+                        <strong>
+                            10:00 — 20:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Thursday
+                        </span>
+
+                        <strong>
+                            10:00 — 20:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Friday
+                        </span>
+
+                        <strong>
+                            10:00 — 19:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Saturday
+                        </span>
+
+                        <strong>
+                            10:00 — 16:00
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Sunday
+                        </span>
+
+                        <strong>
+                            Closed
+                        </strong>
+                    </div>
+
+
+                    <small>
+                        Online booking is open 24/7.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div>
+
+            <a href="#home" class="logo">
+                NOIR<span>.</span>
+            </a>
+
+            <p>
+                Modern barbering.<br>
+                Classic attitude.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#about">
+                About us
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+        <div class="footer-meta" aria-label="Contact information">
+            <span>070-123 45 67</span>
+            <span>hello@noirstudio.se</span>
+            <span>Instagram</span>
+        </div>
+
+        <div class="copyright">
+            <div class="footer-legal">
+                <a href="privacy.html">Integritetspolicy</a>
+                <a href="terms.html">Köpvillkor</a>
+                <a href="cookiepolicy.html">Cookiepolicy</a>
+                <button type="button" class="footer-cookie-link" data-manage-cookies>
+                    Hantera cookies
+                </button>
+            </div>
+
+            © 2026 NOIR STUDIO<br>
+            ALL RIGHTS RESERVED
+
+        </div>
+
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+        <div class="cookie-copy">
+            <strong>Cookieinställningar</strong>
+            <p>
+                Vi använder cookies för att förbättra din upplevelse,
+                säkerställa att sidan fungerar och analysera trafik.
+            </p>
+        </div>
+
+        <div class="cookie-actions">
+            <button type="button" class="cookie-btn cookie-btn-secondary" data-cookie-choice="necessary">
+                Endast nödvändiga
+            </button>
+            <button type="button" class="cookie-btn cookie-btn-primary" data-cookie-choice="all">
+                Godkänn alla
+            </button>
+        </div>
+    </div>
+
+    <div class="booking-modal" id="booking-form" aria-hidden="true">
+        <div class="booking-modal__overlay" data-close-booking></div>
+
+        <div class="booking-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+            <button type="button" class="booking-modal__close" aria-label="Close booking form" data-close-booking>
+                ×
+            </button>
+
+            <div class="booking-header">
+                <div class="booking-brand-wrap">
+                    <div class="brand-mark booking-brand-mark" aria-label="NOIR brand mark">NOIR</div>
+                    <p class="eyebrow dark">BOOKING</p>
+                </div>
+                <div class="booking-heading-copy">
+                    <h3 id="bookingTitle">Demo appointment</h3>
+                    <p>Book your next cut in a few quick steps.</p>
+                </div>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+
+                <div class="field">
+                    <label for="serviceName">Service</label>
+                    <select id="serviceName" name="service" required></select>
+                </div>
+
+                <div class="field">
+                    <label for="bookingDate">Available date</label>
+                    <select id="bookingDate" name="date" required></select>
+                </div>
+
+                <div class="field">
+                    <label for="bookingTime">Available time</label>
+                    <select id="bookingTime" name="time" required></select>
+                </div>
+
+                <div class="field">
+                    <label for="customerName">Name</label>
+                    <input id="customerName" name="name" type="text" placeholder="Your name" required>
+                </div>
+
+                <div class="field">
+                    <label for="customerEmail">Email</label>
+                    <input id="customerEmail" name="email" type="email" placeholder="name@gmail.com" required>
+                </div>
+
+                <div class="field">
+                    <label for="customerPhone">Phone number</label>
+                    <input id="customerPhone" name="phone" type="tel" placeholder="070-123 45 67" required>
+                </div>
+
+                <button type="submit" class="btn btn-dark">
+                    Request appointment
+                </button>
+
+                <p id="bookingStatus" class="booking-status" aria-live="polite"></p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

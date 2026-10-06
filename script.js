@@ -1,58 +1,6 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const header = document.querySelector('.header');
-const cookieBanner = document.getElementById('cookieBanner');
-const cookieChoices = document.querySelectorAll('[data-cookie-choice]');
-const manageCookieButtons = document.querySelectorAll('[data-manage-cookies]');
-const cookieConsentKey = 'noir-cookie-consent';
-
-const readCookieConsent = () => {
-  try {
-    return localStorage.getItem(cookieConsentKey);
-  } catch (error) {
-    return null;
-  }
-};
-
-const writeCookieConsent = (choice) => {
-  try {
-    localStorage.setItem(cookieConsentKey, choice);
-    document.body.dataset.cookieConsent = choice;
-  } catch (error) {
-    // Ignore storage errors and keep the banner visible.
-  }
-};
-
-const setCookieBannerVisibility = (visible) => {
-  if (!cookieBanner) return;
-
-  cookieBanner.classList.toggle('is-visible', visible);
-};
-
-if (cookieBanner) {
-  const savedChoice = readCookieConsent();
-
-  if (savedChoice) {
-    document.body.dataset.cookieConsent = savedChoice;
-    setCookieBannerVisibility(false);
-  } else {
-    requestAnimationFrame(() => setCookieBannerVisibility(true));
-  }
-}
-
-cookieChoices.forEach((button) => {
-  button.addEventListener('click', () => {
-    writeCookieConsent(button.dataset.cookieChoice || 'necessary');
-    setCookieBannerVisibility(false);
-  });
-});
-
-manageCookieButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    setCookieBannerVisibility(true);
-  });
-});
-
 if (menuButton) {
   menuButton.addEventListener('click', () => {
     const open = nav.classList.toggle('open');

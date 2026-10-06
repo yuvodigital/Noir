@@ -189,11 +189,15 @@ function closeBookingForm() {
 }
 
 document.querySelectorAll('.booking-link').forEach(link => {
-  link.addEventListener('click', event => {
-    const serviceName = link.getAttribute('data-service') || 'Classic Cut';
-    event.preventDefault();
-    openBookingForm(serviceName);
-  });
+  const linkTarget = link.getAttribute('href') || '';
+
+  if (!linkTarget || linkTarget.startsWith('#')) {
+    link.addEventListener('click', event => {
+      const serviceName = link.getAttribute('data-service') || 'Classic Cut';
+      event.preventDefault();
+      openBookingForm(serviceName);
+    });
+  }
 });
 
 bookingModal?.addEventListener('click', event => {

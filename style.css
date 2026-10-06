@@ -368,9 +368,23 @@ h2 em {
     font-variant-numeric: lining-nums;
 }
 
+.stats strong span {
+    display: inline;
+    margin: 0;
+    font-size: inherit;
+    letter-spacing: inherit;
+    text-transform: none;
+}
+
 .stats .stat-plus,
 .stats .stat-percent {
     color: var(--gold);
+}
+
+.stats .stat-out-of {
+    color: #aaa69f;
+    font-size: 0.52em;
+    vertical-align: 0.18em;
 }
 
 .stats strong {

@@ -363,6 +363,24 @@ h2 em {
     border: 0;
 }
 
+.stats .stat-value {
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-variant-numeric: lining-nums;
+}
+
+.stats .stat-plus,
+.stats .stat-percent {
+    color: var(--accent, #c8a97e);
+}
+
+.stats .stat-out-of {
+    font-family: inherit;
+    font-size: 0.48em;
+    color: #888;
+    vertical-align: 0.18em;
+}
+
 .stats strong {
     display: block;
 
